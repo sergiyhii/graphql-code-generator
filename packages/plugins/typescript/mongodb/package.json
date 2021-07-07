@@ -1,0 +1,45 @@
+{
+  "name": "@graphql-codegen/typescript-mongodb",
+  "version": "1.19.4",
+  "description": "GraphQL Code Generator plugin for generting a ready-to-use ORM types for MongoDB",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dotansimha/graphql-code-generator.git",
+    "directory": "packages/plugins/typescript/mongodb"
+  },
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint **/*.ts",
+    "test": "jest --no-watchman --config ../../../../jest.config.js",
+    "prepack": "bob prepack"
+  },
+  "dependencies": {
+    "@graphql-codegen/plugin-helpers": "^1.18.7",
+    "@graphql-codegen/typescript": "^1.22.4",
+    "@graphql-codegen/visitor-plugin-common": "1.21.3",
+    "@graphql-tools/utils": "^7.9.1",
+    "auto-bind": "~4.0.0",
+    "lodash": "~4.17.0",
+    "tslib": "~2.3.0"
+  },
+  "peerDependencies": {
+    "graphql": "^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0",
+    "graphql-tag": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/lodash": "4.14.171"
+  },
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "typings": "dist/index.d.ts",
+  "typescript": {
+    "definition": "dist/index.d.ts"
+  },
+  "buildOptions": {
+    "input": "./src/index.ts"
+  },
+  "publishConfig": {
+    "directory": "dist",
+    "access": "public"
+  }
+}

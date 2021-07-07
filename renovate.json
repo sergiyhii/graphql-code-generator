@@ -1,0 +1,9 @@
+{
+  "extends": ["config:base"],
+  "postUpdateOptions": ["yarnDedupeFewer"],
+  "automerge": true,
+  "major": {
+    "automerge": false
+  },
+  "labels": ["dependencies"]
+}
